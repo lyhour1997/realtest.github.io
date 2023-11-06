@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P7</title>
+    <title>P6</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/logo.jpg">
     <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="container-fluid bar1">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 menu-box">
-                    <ul>
-                        <!-- <li>
-                            <i class="fas fa-bars"></i>
-                        </li>
-                        <li>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 menu">
+                    <ul class="ul1">
+                        <li class="btnbars">
                             <a href="">
-                                <i class="fas fa-home"></i>
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </li>
+                        <li class="btnlogo">
+                            <a href="">
+                                <img src="img/logo.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="ul2" style="float: right">
+                        <!-- <li>
+                            <a href="">
+                                <i class="fas fa-phone"></i> 092808598
                             </a>
                         </li> -->
                     </ul>
@@ -29,254 +40,286 @@
             </div>
         </div>
     </div>
-    
-    <div class="container">
+
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 title-box">
-                <h1>Khmer Empire</h1>
-                <p>
-                    The early history of Cambodia follows the prehistoric and protohistoric development of Cambodia as a country in mainland Southeast Asia. 
-                    Thanks to archaeological work carried out since 2009 this can now be traced back to the Neolithic period. 
-                </p>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 slide-container">
+                <div class="box">
+                    <!-- <div class="slide">
+                        <img src="img/slide.1.jpg" alt="">
+                        <h1>Shop Now</h1>
+                    </div> -->
+    
+                    <div class="btn-slide btn-Next">
+                        Next <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="btn-slide btn-Back">
+                        <i class="fa-solid fa-angle-left"></i> Back
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container item-container">
+    <div class="container-fluid" id="cate-box-container">
         <div class="row">
+            <!-- <div class="col-xl-3 col-lg-3 cate-box">
+                <div class="img-box">
+                    <img src="img/1.jpg" alt="">
+                    <h1>Ronaldo</h1>
+                </div>
+            </div> -->
+        </div>
+    </div>
 
-            <!-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6 item-box">
-                <div class="box">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 title-box">
+                <h1>BEST SELLER</h1>
+                <p>TOP PRODUCT OF THIS WEEK</p>
+            </div>
+        </div>
+
+        <div class="row" id="row">
+            <!-- <div class="col-xl-3 item-box">
+                <div class="box1">
                     <div class="img-box">
                         <img src="img/1.jpg" alt="">
+                        <div class="status-box">
+                            Instock
+                        </div>
+                        <div class="btn-fb">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span class="share-fb">Share to fb</span>
+                        </div>
+                        <div class="code-box">
+                            Code:001
+                        </div>
+            
                     </div>
                     <div class="txt-box">
-                        <h1>USA</h1>
-                        <p>
-                            The U.S. is a country of 50 states covering a vast swath of North America,
-                            with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean.
-                        </p>
-                        <a href="" class="btnMore">
-                            More...
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6  item-box">
-                <div class="box">
-                    <div class="img-box">
-                        <img src="img/c1.jpg" alt="">
-                    </div>
-                    <div class="txt-box">
-                        <h1>Canada</h1>
-                        <p>
-                            Canada is a country in North America. Its ten provinces and 
-                            three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean,
-                        </p>
-                        <a href="" class="btnMore">
-                            More...
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6 item-box">
-                <div class="box">
-                    <div class="img-box">
-                        <img src="img/J1.jpg" alt="">
-                    </div>
-                    <div class="txt-box">
-                        <h1>Japan</h1>
-                        <p>
-                            Japan is an island country in East Asia. It is situated in the northwest Pacific Ocean 
-                            and is bordered on the west by the Sea of Japan.
-                        </p>
-                        <a href="" class="btnMore">
-                            More...
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6 item-box">
-                <div class="box">
-                    <div class="img-box">
-                        <img src="img/p1.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        <h1>Cambodia</h1>
-                        <p>
-                            Cambodia is a Southeast Asian nation whose landscape spans low-lying plains, 
-                            the Mekong Delta, mountains and Gulf of Thailand coastline. 
-                            Phnom Penh, its capital, is home to the art deco Central Market, 
-                        </p>
-                        <a href="" class="btnMore">
-                            More...
-                        </a>
+                        <p>Siem Reap, a resort town in northwestern Cambodia, is the gateway to the ruins of Angkor</p>
+                        <h1>
+                            <span class="full">$30.00</span>
+                            <span class="dis">$28.00</span>
+                        </h1>
+                        <ul>
+                            <li><img src="img/4.jpg" alt=""></li>
+                            <li><img src="img/3.jpg" alt=""></li>
+                            <li><img src="img/2.jpg" alt=""></li>
+                        </ul>
+                        <h2>
+                            Add to Card
+                        </h2>
                     </div>
                 </div>
             </div> -->
-
         </div>
+    </div>
+
+    <div class="Msg">
+        <i class="fa-brands fa-rocketchat"></i>
     </div>
 
     <!-- <div class="popup">
-        <div class="sub-img-box">
-            <div class="img-box">
-                <img src="img/1.jpg" alt="">
-            </div>
-            <div class="txt-box">
-                <h1>abc</h1>
-                <p>bcd</p>
-            </div>
-            <div class="btnClose">
-                <i class="fas fa-times"></i>
-            </div>
+        <div class="img-box-sub">
+            <img src="img/1.jpg" alt="">
+            <i class="fas fa-times" id="btnClose"></i>
         </div>
+        tooltip
     </div> -->
-
-    <div class="footer">
-       <h1> Create By : Rean Web</h1>
-    </div>
 
 </body>
 <script>
-    const data = [
+    const Item = [
         {
-            "name":"USA",
-            "img":"img/1.jpg",
-            "title":"The U.S. is a country of 50 states covering a vast swath of North America,with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean.",
+            "name":"Tesla",
+            "name1":"Login", // ber float left count pi mun ber rigth count pi rigth
+            "name2":"Code:001",
+            "img1":"slide.1.jpg",
+            "img2":"img/1.jpg",
+            "price":"$30.00",
+            "price1":"$28.00"
         },
 
         {
-            "name":"Canada",
-            "img":"img/c1.jpg",
-            "title":"Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean,"
+            "name":"Apple",
+            "name1":"<i class='fa-solid fa-cart-shopping'></i>",
+            "name2":"Code:002",
+            "img1":"slide.2.jpg",
+            "img2":"img/2.jpg",
+            "price":"$28.00",
+            "price1":"$25.00"
         },
 
         {
-            "name":"Japan",
-            "img":"img/J1.jpg",
-            "title":"Japan is an island country in East Asia. It is situated in the northwest Pacific Ocean and is bordered on the west by the Sea of Japan."
+            "name":"Google",
+            "name1":"<i class='fas fa-search'></i>",
+            "name2":"Code:003",
+            "img1":"slide.3.jpg",
+            "img2":"img/3.jpg",
+            "price":"$25.00",
+            "price1":"$20.00"
         },
 
         {
-            "name":"Cambodia",
-            "img":"img/p1.png",
-            "title":"Cambodia is a Southeast Asian nation whose landscape spans low-lying plains, the Mekong Delta"
-        },
-
-        {
-            "name":"Paris",
-            "img":"img/Pr1.jpg",
-            "title":"Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture."
-        },
-
-        {
-            "name":"Switzerland",
-            "img":"img/s2.jpg",
-            "title":"Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps."
-        },
-
-        {
-            "name":"EngLand",
-            "img":"img/e1.jpg",
-            "title":"England is a country that is part of the United Kingdom. It shares land borders with Wales to its west and Scotland to its north."
-        },
-
-        {
-            "name":"Singapore",
-            "img":"img/sp1.jpg",
-            "title":"Singapore, officially the Republic of Singapore, is an island country and city-state in maritime Southeast Asia."
+            "name":"Meta",
+            "name1":"<i class='fas fa-phone'></i> 092808598",
+            "name2":"Code:004",
+            "img1":"slide.4.jpg",
+            "img2":"img/4.jpg",
+            "price":"$20.00",
+            "price1":"$18.00"
+            
         },
     ];
 
     $(document).ready(function(){
-        //getItem
-        getItem();
-        function getItem(){
-            let txt='';
-            data.forEach( e => {
-                txt+=`<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6 item-box">
-                        <div class="box">
+        //item
+        getItemBox();
+        function getItemBox(){
+            let txt ='';
+            Item.forEach( (e,i)=>{
+                txt+=`<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box">
+                        <div class="box1">
                             <div class="img-box">
-                                <img src="${e['img']}" alt="">
+                                <img src="${e['img2']}" alt="">
+                                <div class="status-box">
+                                    Instock
+                                </div>
+                                <div class="btn-fb">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <span class="share-fb">Share to fb</span>
+                                </div>
+                                <div class="code-box">
+                                    ${e['name2']}
+                                </div>
+                    
                             </div>
                             <div class="txt-box">
-                                <h1>${e['name']}</h1>
-                                <p>
-                                    ${e['title']}
-                                </p>
-                                <a href="#" class="btnMore">
-                                    More...
-                                </a>
+                                <p>Siem Reap, a resort town in northwestern Cambodia</p>
+                                <h1>
+                                    <span class="full">${e['price']}</span>
+                                    <span class="dis">${e['price1']}</span>
+                                </h1>
+                                <ul>
+                                    <li><img src="${e['img2']}" alt=""></li>
+                                    <li><img src="${e['img2']}" alt=""></li>
+                                    <li><img src="${e['img2']}" alt=""></li>
+                                </ul>
+                                <a href='#'>
+                                    Add to Card
+                                </a> 
+                                
                             </div>
                         </div>
                     </div>`;
             });
-            $('.item-container').find('.row').append(txt);
+            $("#row").append(txt);
         }
-        //click on item
-        $('.item-container').on("click",'.row .item-box',function(){
-            var eThis = $(this);
-            var img2 = eThis.find('img').attr("src");
-            var name = eThis.find('h1').text();
-            var title =  eThis.find('p').text();
-            var frm =`<div class="popup">
-                        <div class="sub-img-box">
-                            <div class="img-box">
-                                <img src="${img2}" alt="">
-                            </div>
-                            <div class="txt-box">
-                                <h1>${name}</h1>
-                                <p>${title}</p>
-                            </div>
-                            <div class="btnClose">
-                                <i class="fas fa-times"></i>
-                            </div>
-                        </div>
-                    </div>`;
-            $('body').append(frm);
+        $('body').on('click','.item-box ',function(){ //trov jab item big big del control on data ni1 ni1
+            var ind = $(this).index();
+            var img2 = Item[ind]['img2'];
+            var ItemBox = `<div class="popup">
+                                <div class="img-box-sub">
+                                    <img src="${img2}" alt="">
+                                    <i class="fas fa-times" id="btnClose"></i>
+                                </div>
+                        </div>`;
+            $('body').append(ItemBox);
         });
-        //remove
-        $("body").on("click",'.sub-img-box .btnClose',function(){ //season coz body control on data all ban we can control popup ban
-            $(".popup").remove();
+        //getCate
+        getCatebox();
+        function getCatebox(){
+            let txt='';
+            Item.forEach( e =>{
+                txt+=`<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 cate-box">
+                            <div class="img-box">
+                                <img src="${e['img2']}" alt="">
+                                <h1>${e['name']}</h1>
+                            </div>
+                        </div>`;
+            });
+            $("#cate-box-container").find('.row').html(txt);
+        }
+        //grab data in item
+        $('body').on('click','.cate-box .img-box',function(){ //if we grab img trov jab box del control on it
+            var eThis = $(this);
+            var img2 = eThis.find('img').attr('src');
+            var frm = `<div class="popup">
+                        <div class="img-box-sub">
+                            <img src="${img2}" alt="">
+                            <i class="fas fa-times" id="btnClose"></i>
+                        </div>
+                    </div> `;
+            $("body").append(frm);
+        });
+        //close
+        $("body").on('click','.popup #btnClose',function(){
+            $(this).parents('.popup').remove();
         });
 
+        //loop slide
+        getSlide();
+        function getSlide(){
+            var txt = '';
+            var x =1;
+            for(i in Item){
+                txt+=`
+                    <div class="slide">
+                        <img src="img/${Item[i]['img1']}" alt="">
+                        <h1>${Item[i]['name']}</h1>
+                        <h2>${x}</h2>
+                    </div>`;
+                x++;
+            }
+            $('.slide-container').find('.box').append(txt);
+        }
+        var slide = $(".slide");
+        var slideInd= 0;
+        var numslide = slide.length;
+        
+        slide.hide();
+        slide.eq(slideInd).show(); //eq as ti dang
+        $(".btn-Next").click(function(){
+            slide.eq(slideInd).hide();
+            slideInd++; //count slide
+            if( slideInd >= numslide){ //slideInd big than f when = numslide T show eq(0)
+                slideInd=0;
+            }
+            slide.eq(slideInd).show();
+        });
+        $(".btn-Back").click(function(){
+            slide.eq(slideInd).hide();
+            slideInd--; //count slide
+            if(slideInd < 0){ //slideInd big than f when = numslide T show eq(0)
+                slideInd= numslide-1;
+            }
+            slide.eq(slideInd).show();
+        });
+
+        //loopMenu
         getMenu();
         function getMenu(){
-            let txt='<li class="active" id="bars"><a href="#"><i class="fas fa-bars"></i></a></li> <li class="home"><a href="#"><i class="fas fa-house"></i></a></li>';
-            data.forEach(e =>{
+            let txt ='';
+            Item.forEach( (e,i)=>{
                 txt+=`<li>
                         <a href="#">${e['name']}</a>
                     </li>`;
             });
-            $(".menu-box").find('ul').append(txt);
-            
+            $('.menu').find('ul.ul1').append(txt);
         }
-        
-        //click on Menu
-        $(".menu-box").on('click','ul li',function(){
-            $(this).addClass('active').siblings().removeClass('active');
-            var eThis = $(this);
-            var ind = eThis.index()-2; //count data obj li count 0 go dol 0-1= -1-1=0 vinh
-            var img2 = data[ind]['img'];
-            var name = data[ind]['name'];
-            var title = data[ind]['title'];
-            var frm =`<div class="popup">
-                        <div class="sub-img-box">
-                            <div class="img-box">
-                                <img src="${img2}" alt="">
-                            </div>
-                            <div class="txt-box">
-                                <h1>${name}</h1>
-                                <p>${title}</p>
-                            </div>
-                            <div class="btnClose">
-                                <i class="fas fa-times"></i>
-                            </div>
-                        </div>
-                    </div>`;
-            $('body').append(frm);
-        });
+        getMenuR();
+        function getMenuR(){
+            let txt ='';
+            Item.forEach( e =>{
+                txt+=`<li>
+                        <a href="#">${e['name1']}</a>
+                    </li>`;
+            });
+            $('.menu').find('ul.ul2').append(txt);
+        }
     });
 </script>
 </html>
