@@ -2,324 +2,623 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P6</title>
+    <title>P2.0</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" href="img/logo.jpg">
     <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid bar1">
-        <div class="container">
+    <div class="container-fluid" id="bar1">
+        <!-- <div class="container"> -->
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 menu">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 menu-container">
                     <ul class="ul1">
                         <li class="btnbars">
-                            <a href="">
-                                <i class="fas fa-bars"></i>
-                            </a>
-                        </li>
-                        <li class="btnlogo">
-                            <a href="">
-                                <img src="img/logo.jpg" alt="">
-                            </a>
+                            <a href=""><i class="fas fa-bars"></i></a>
                         </li>
                     </ul>
 
-                    <ul class="ul2" style="float: right">
-                        <!-- <li>
+                    <ul class="ul2">
+                        <li>
                             <a href="">
                                 <i class="fas fa-phone"></i> 092808598
                             </a>
-                        </li> -->
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-sign-out"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
+        <!-- </div> -->
+    </div>
+
+    <div class="container-fluid" id="bar2">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 slide-container">
+                <!-- <div class="slide-box">
+                    <img src="img/1.jpg" alt="">
+                    <h1>Abc</h1>
+                </div> -->
+
+
+                <div class="btnslide btn-back">
+                    Back
+                </div>
+                <div class="btnslide btn-next">
+                    Next
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div class="container-fluid" id="Item-container1">
+        <div class="row">
+            <!-- <div class="col-xl-3 col-lg-3 Item-container">
+                <div class="item-box">
+                    <div class="img-box">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="txt-box">
+                        <h1>iphone</h1>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+    <div class="title-container" style="text-align: center;">
+        <h1>BEST SELLER</h1>
+        <h2>TOP PRODUCT OF THIS WEEK</h2>
+    </div>
+
+    <div class="container" id="bar4">
+        <div class="row">
+
+            <!-- <div class="col-xl-3 col-lg-3 Product-container">
+                <div class="product-box">
+
+                    <div class="img-box">
+                        <img src="img/1.webp" alt="">
+                        <h1 class="InS-box">Instock</h1>
+
+                        <div class="btnfb">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+
+                        <p class="btnCode"> Code : A001 </p>
+
+                    </div>
+
+                    <div class="txt-box">
+                        <h1>abc</h1>
+                        <h2>
+                            <span class="dis">$300.00</span>
+                            <span class="full">$280.00</span>
+                        </h2> 
+
+                        <div class="small-box">
+                            <li>
+                                <img src="img/1.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="img/2.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/3.webp" alt="">
+                            </li>
+                            
+                        </div>
+                        <a href="" class="btncard">
+                            <span>Add to card</span> 
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 Product-container">
+                <div class="product-box">
+
+                    <div class="img-box">
+                        <img src="img/2.jpg" alt="">
+                        <h1 class="InS-box">Instock</h1>
+
+                        <div class="btnfb">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+
+                        <p class="btnCode"> Code : A001 </p>
+
+                    </div>
+
+                    <div class="txt-box">
+                        <h1>abc</h1>
+                        <h2>
+                            <span class="dis">$300.00</span>
+                            <span class="full">$280.00</span>
+                        </h2> 
+
+                        <div class="small-box">
+                            <li>
+                                <img src="img/1.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="img/2.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/3.webp" alt="">
+                            </li>
+                            
+                        </div>
+                        <a href="" class="btncard">
+                            <span>Add to card</span> 
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 Product-container">
+                <div class="product-box">
+
+                    <div class="img-box">
+                        <img src="img/1.webp" alt="">
+                        <h1 class="InS-box">Instock</h1>
+
+                        <div class="btnfb">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+
+                        <p class="btnCode"> Code : A001 </p>
+
+                    </div>
+
+                    <div class="txt-box">
+                        <h1>abc</h1>
+                        <h2>
+                            <span class="dis">$300.00</span>
+                            <span class="full">$280.00</span>
+                        </h2> 
+
+                        <div class="small-box">
+                            <li>
+                                <img src="img/1.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="img/2.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/3.webp" alt="">
+                            </li>
+                            
+                        </div>
+                        <a href="" class="btncard">
+                            <span>Add to card</span> 
+                        </a>
+
+                    </div>
+
+                </div>
+            </div> -->
+            
+        </div>
+    </div>
+
+    <div class="Msg-box">
+        <i class="fa-brands fa-rocketchat"></i>
     </div>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 slide-container">
-                <div class="box">
-                    <!-- <div class="slide">
-                        <img src="img/slide.1.jpg" alt="">
-                        <h1>Shop Now</h1>
-                    </div> -->
-    
-                    <div class="btn-slide btn-Next">
-                        Next <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                    <div class="btn-slide btn-Back">
-                        <i class="fa-solid fa-angle-left"></i> Back
-                    </div>
-                    
-                </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 footer-box">
+                <span> Create By : Rean web </span>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid" id="cate-box-container">
-        <div class="row">
-            <!-- <div class="col-xl-3 col-lg-3 cate-box">
-                <div class="img-box">
-                    <img src="img/1.jpg" alt="">
-                    <h1>Ronaldo</h1>
-                </div>
-            </div> -->
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12 title-box">
-                <h1>BEST SELLER</h1>
-                <p>TOP PRODUCT OF THIS WEEK</p>
-            </div>
-        </div>
-
-        <div class="row" id="row">
-            <!-- <div class="col-xl-3 item-box">
-                <div class="box1">
-                    <div class="img-box">
-                        <img src="img/1.jpg" alt="">
-                        <div class="status-box">
-                            Instock
-                        </div>
-                        <div class="btn-fb">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <span class="share-fb">Share to fb</span>
-                        </div>
-                        <div class="code-box">
-                            Code:001
-                        </div>
-            
-                    </div>
-                    <div class="txt-box">
-                        <p>Siem Reap, a resort town in northwestern Cambodia, is the gateway to the ruins of Angkor</p>
-                        <h1>
-                            <span class="full">$30.00</span>
-                            <span class="dis">$28.00</span>
-                        </h1>
-                        <ul>
-                            <li><img src="img/4.jpg" alt=""></li>
-                            <li><img src="img/3.jpg" alt=""></li>
-                            <li><img src="img/2.jpg" alt=""></li>
-                        </ul>
-                        <h2>
-                            Add to Card
-                        </h2>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </div>
-
-    <div class="Msg">
-        <i class="fa-brands fa-rocketchat"></i>
-    </div>
-
-    <!-- <div class="popup">
-        <div class="img-box-sub">
-            <img src="img/1.jpg" alt="">
-            <i class="fas fa-times" id="btnClose"></i>
-        </div>
-        tooltip
+    <!-- <div class="left-container">
+        <ul>
+            <li>
+                <a href="">1</a>
+            </li>
+            <li>
+                <a href="">2</a>
+            </li>
+            <li>
+                <a href="">3</a>
+            </li>
+        </ul>
     </div> -->
 
+    <!-- <div class="popup">
+        <div class="frm">
+            <div class="box1">
+                <img src="img/1.webp" alt="">
+            </div>
+
+            <div class="box2">
+                <h1>Information</h1>
+
+                <div class="box2-1">
+                    <div class="img-box">
+                        <img src="img/1.webp" alt="">
+                    </div>
+                    <div class="txt-box">
+                        <h2>abc</h2>
+                    </div>
+                </div>
+                <div class="box2-1">
+                    <div class="img-box">
+                        <img src="img/1.webp" alt="">
+                    </div>
+                    <div class="txt-box">
+                        <h2>abc</h2>
+                    </div>
+                </div>
+                <div class="box2-1">
+                    <div class="img-box">
+                        <img src="img/1.webp" alt="">
+                    </div>
+                    <div class="txt-box">
+                        <h2>abc</h2>
+                    </div>
+                </div>
+                <div class="box2-1">
+                    <div class="img-box">
+                        <img src="img/1.webp" alt="">
+                    </div>
+                    <div class="txt-box">
+                        <h2>abc</h2>
+                    </div>
+                </div>
+                <div class="box2-1">
+                    <div class="img-box">
+                        <img src="img/1.webp" alt="">
+                    </div>
+                    <div class="txt-box">
+                        <h2>abc</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="btnClose">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div> -->
+    
 </body>
 <script>
-    const Item = [
+
+    const Items = [
         {
-            "name":"Tesla",
-            "name1":"Login", // ber float left count pi mun ber rigth count pi rigth
-            "name2":"Code:001",
-            "img1":"slide.1.jpg",
-            "img2":"img/1.jpg",
-            "price":"$30.00",
-            "price1":"$28.00"
+            "name":"IPhone",
+            "title":"The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
+            "title1":"The iPhone is a smartphone made by Apple that combines a computer",
+            "img":"img/1.webp",
+            "img1":"img/2.jpg",
+            "img2":"img/3.webp",
+            "code":"A001",
+            "price":"500.00",
+            "price1":"450.00",
         },
 
         {
-            "name":"Apple",
-            "name1":"<i class='fa-solid fa-cart-shopping'></i>",
-            "name2":"Code:002",
-            "img1":"slide.2.jpg",
-            "img2":"img/2.jpg",
-            "price":"$28.00",
-            "price1":"$25.00"
+            "name":"Android",
+            "title":"Android OS is a Linux-based mobile operating system that primarily runs on smartphones and tablets.",
+            "title1":"Android OS is a Linux-based mobile operating system that",
+            "img":"img/2.jpg",
+            "img1":"img/1.webp",
+            "img2":"img/3.webp",
+            "code":"A002",
+            "price":"450.00",
+            "price1":"400.00",
         },
 
         {
-            "name":"Google",
-            "name1":"<i class='fas fa-search'></i>",
-            "name2":"Code:003",
-            "img1":"slide.3.jpg",
-            "img2":"img/3.jpg",
-            "price":"$25.00",
-            "price1":"$20.00"
+            "name":"IPad",
+            "title":"The iPad is a touchscreen tablet PC made by Apple. The original iPad debuted in 2010. Apple has four iPad product lines: iPad, iPad mini, iPad Air and iPad Pro.",
+            "title1":"The iPad is a touchscreen tablet PC made by Apple",
+            "img":"img/3.webp",
+            "img1":"img/2.jpg",
+            "img2":"img/1.webp",
+            "code":"A003",
+            "price":"400.00",
+            "price1":"350.00",
         },
 
         {
-            "name":"Meta",
-            "name1":"<i class='fas fa-phone'></i> 092808598",
-            "name2":"Code:004",
-            "img1":"slide.4.jpg",
-            "img2":"img/4.jpg",
-            "price":"$20.00",
-            "price1":"$18.00"
-            
+            "name":"Sam Sung",
+            "title":"Samsung, South Korean company that is one of the world's largest producers of electronic devices.",
+            "title1":"Samsung, South Korean company that is one of the world's",
+            "img":"img/4.webp",
+            "img1":"img/1.webp",
+            "img2":"img/3.webp",
+            "code":"A004",
+            "price":"350.00",
+            "price1":"300.00",
         },
+
+        {
+            "name":"OPPO",
+            "title":"Oppo is a Chinese consumer electronics manufacturer headquartered in Dongguan, Guangdong",
+            "title1":"Oppo is a Chinese consumer electronics manufacturer headquartered in Dongguan",
+            "img":"img/5.jpeg",
+            "img1":"img/2.jpg",
+            "img2":"img/4.webp",
+            "code":"A005",
+            "price":"330.00",
+            "price1":"300.00",
+        },
+
+        {
+            "name":"Lenovo",
+            "title":"LENOVO is a Hong Kong based multinational company founded by Liu Chuanzhi on 1st November 1984",
+            "title1":"LENOVO is a Hong Kong based multinational company founded by Liu Chuanzhi",
+            "img":"img/6.jpg",
+            "img1":"img/2.jpg",
+            "img2":"img/1.webp",
+            "code":"A006",
+            "price":"300.00",
+            "price1":"280.00",
+        },
+
+        {
+            "name":"Vivo",
+            "title":"The vivo Y series is for affordable devices, meaning we don't expect anything impressive from the dual cameras on the back or the selfie shooter inside the punch hole.",
+            "title1":"The vivo Y series is for affordable devices, meaning we don't expect anything",
+            "img":"img/7.jpg",
+            "img1":"img/4.webp",
+            "img2":"img/5.jpeg",
+            "code":"A007",
+            "price":"300.00",
+            "price1":"250.00",
+        },
+
+        {
+            "name":"Huawei",
+            "title":"Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices",
+            "title1":"Huawei is a leading global provider of information and communications technology",
+            "img":"img/8.jpg",
+            "img1":"img/1.webp",
+            "img2":"img/6.jpg",
+            "code":"A008",
+            "price":"400.00",
+            "price1":"330.00",
+        }
     ];
 
     $(document).ready(function(){
-        //item
-        getItemBox();
-        function getItemBox(){
-            let txt ='';
-            Item.forEach( (e,i)=>{
-                txt+=`<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 item-box">
-                        <div class="box1">
-                            <div class="img-box">
-                                <img src="${e['img2']}" alt="">
-                                <div class="status-box">
-                                    Instock
-                                </div>
-                                <div class="btn-fb">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                    <span class="share-fb">Share to fb</span>
-                                </div>
-                                <div class="code-box">
-                                    ${e['name2']}
-                                </div>
-                    
+        var body = $('body');
+        var menu = $(".menu-container");
+        var popup = "<div class='popup'></div>";
+
+        // get prod
+        getProd();
+        function getProd(){
+            var txt = '';
+            for(i in Items){
+                txt+=`<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 Product-container">
+                    <div class="product-box">
+
+                        <div class="img-box">
+                            <img src="${Items[i]['img']}" alt="">
+                            <h1 class="InS-box">Instock</h1>
+
+                            <div class="btnfb">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </div>
-                            <div class="txt-box">
-                                <p>Siem Reap, a resort town in northwestern Cambodia</p>
-                                <h1>
-                                    <span class="full">${e['price']}</span>
-                                    <span class="dis">${e['price1']}</span>
-                                </h1>
-                                <ul>
-                                    <li><img src="${e['img2']}" alt=""></li>
-                                    <li><img src="${e['img2']}" alt=""></li>
-                                    <li><img src="${e['img2']}" alt=""></li>
-                                </ul>
-                                <a href='#'>
-                                    Add to Card
-                                </a> 
+
+                            <p class="btnCode"> Code : ${Items[i]['code']} </p>
+
+                        </div>
+
+                        <div class="txt-box">
+                            <h1>${Items[i]['title1']}</h1>
+                            <h2>
+                                <span class="dis">$${Items[i]['price']}</span>
+                                <span class="full">$${Items[i]['price1']}</span>
+                            </h2> 
+
+                            <div class="small-box">
+                                <li>
+                                    <img src="${Items[i]['img']}" alt="">
+                                </li>
+                                <li>
+                                    <img src="${Items[i]['img1']}" alt="">
+                                </li>
+                                <li>
+                                    <img src="${Items[i]['img2']}" alt="">
+                                </li>
                                 
                             </div>
+                            <a href="" class="btncard">
+                                <span>Add to card</span> 
+                            </a>
+
                         </div>
-                    </div>`;
-            });
-            $("#row").append(txt);
+
+                    </div>
+                </div>`;
+            }
+            $("#bar4").find(".row").append(txt);
         }
-        $('body').on('click','.item-box ',function(){ //trov jab item big big del control on data ni1 ni1
-            var ind = $(this).index();
-            var img2 = Item[ind]['img2'];
-            var ItemBox = `<div class="popup">
-                                <div class="img-box-sub">
-                                    <img src="${img2}" alt="">
-                                    <i class="fas fa-times" id="btnClose"></i>
+
+        // click on prod
+        body.on('click','.Product-container .product-box',function(){
+            var eThis = $(this);
+            var ItemProd = eThis.parent(".Product-container");
+            var ind = ItemProd.index();
+            var subItem = Items[ind];
+
+            var frm =`<div class='popup'>
+                    <div class="frm">
+                        <div class="box1">
+                            <img src="${subItem['img']}" alt="">
+                        </div>
+
+                        <div class="box2">
+                            <h1>Information</h1>
+
+                            <div class="box2-1">
+                                <div class="img-box">
+                                    <img src="${subItem['img']}" alt="">
                                 </div>
-                        </div>`;
-            $('body').append(ItemBox);
+                                <div class="txt-box">
+                                    <h2>${subItem['title']}</h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="btnClose">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>`;
+            body.append(frm);
+
         });
-        //getCate
-        getCatebox();
-        function getCatebox(){
-            let txt='';
-            Item.forEach( e =>{
-                txt+=`<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 cate-box">
-                            <div class="img-box">
-                                <img src="${e['img2']}" alt="">
-                                <h1>${e['name']}</h1>
+
+        // get Item
+        getItem();
+        function getItem(){
+            var txt = '';
+            for(i in Items){
+                txt +=`<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 Item-container">
+                            <div class="item-box">
+                                <div class="img-box">
+                                    <img src="${Items[i]['img']}" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <h1>${Items[i]['title']}</h1>
+                                </div>
                             </div>
                         </div>`;
-            });
-            $("#cate-box-container").find('.row').html(txt);
+            }
+            $("#Item-container1").find('.row').append(txt);
         }
-        //grab data in item
-        $('body').on('click','.cate-box .img-box',function(){ //if we grab img trov jab box del control on it
-            var eThis = $(this);
-            var img2 = eThis.find('img').attr('src');
-            var frm = `<div class="popup">
-                        <div class="img-box-sub">
-                            <img src="${img2}" alt="">
-                            <i class="fas fa-times" id="btnClose"></i>
+
+        //click on Item
+        body.on("click",'#Item-container1 .Item-container',function(){
+            var img2 = $(this).find(' img ').attr('src');
+            var title2 = $(this).find('h1').text();
+            var frm =`<div class='popup'>
+                <div class="frm">
+                    <div class="box1">
+                        <img src="${img2}" alt="">
+                    </div>
+
+                    <div class="box2">
+                        <h1>Information</h1>
+
+                        <div class="box2-1">
+                            <div class="img-box">
+                                <img src="${img2}" alt="">
+                            </div>
+                            <div class="txt-box">
+                                <h2>${title2}</h2>
+                            </div>
                         </div>
-                    </div> `;
-            $("body").append(frm);
-        });
-        //close
-        $("body").on('click','.popup #btnClose',function(){
-            $(this).parents('.popup').remove();
+
+                    </div>
+
+                    <div class="btnClose">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>`;
+            body.append(frm);
         });
 
-        //loop slide
+        // Close
+        body.on('click','.frm .btnClose',function(){
+            var eThis = $(this);
+            eThis.parents('.popup').remove();
+        });
+
+       
+        // getSlide 
         getSlide();
+        // function getSlide(){
+        //     var txt = '';
+        //     for(i in Items){
+        //         txt+=`<div class="slide-box">
+        //                 <img src="${Items[i]['img']}" alt="">
+        //                 <h1>${Items[i]['name']}</h1>
+        //             </div>`;
+        //     }
+        //     body.find(".slide-container").append(txt);
+        // }
         function getSlide(){
             var txt = '';
-            var x =1;
-            for(i in Item){
-                txt+=`
-                    <div class="slide">
-                        <img src="img/${Item[i]['img1']}" alt="">
-                        <h1>${Item[i]['name']}</h1>
-                        <h2>${x}</h2>
+            var num = Items.length;
+            for(i=0; i < num; i++){
+                txt+=`<div class="slide-box">
+                        <img src="${Items[i]['img']}" alt="">
+                        <h1>${Items[i]['name']}</h1>
                     </div>`;
-                x++;
             }
-            $('.slide-container').find('.box').append(txt);
+            body.find(".slide-container").append(txt);
         }
-        var slide = $(".slide");
-        var slideInd= 0;
-        var numslide = slide.length;
-        
+
+        // hide & show
+        var slide = $(".slide-box");
+        var slideInd = 0; // before born numSlide
+        var numSlide = slide.length;
+
         slide.hide();
-        slide.eq(slideInd).show(); //eq as ti dang
-        $(".btn-Next").click(function(){
+        slide.eq(slideInd).show();
+        // Next
+        $(".btn-next").click(function(){
             slide.eq(slideInd).hide();
-            slideInd++; //count slide
-            if( slideInd >= numslide){ //slideInd big than f when = numslide T show eq(0)
-                slideInd=0;
-            }
-            slide.eq(slideInd).show();
-        });
-        $(".btn-Back").click(function(){
-            slide.eq(slideInd).hide();
-            slideInd--; //count slide
-            if(slideInd < 0){ //slideInd big than f when = numslide T show eq(0)
-                slideInd= numslide-1;
+            slideInd++; // use for count data
+
+            if(slideInd >= numSlide){  //when it equen length slide give show slideInd 0 back
+                slideInd = 0;
             }
             slide.eq(slideInd).show();
         });
 
-        //loopMenu
+        // Back
+        $(".btn-back").click(function(){
+            slide.eq(slideInd).hide();
+            slideInd--; // use for count length data 0->-1->-2...
+            if(slideInd < 0){ // 0-> -1-> -2...
+                slideInd = numSlide-1; //4-1=3-1=2-1=1-1=0
+            }
+            slide.eq(slideInd).show();
+        });
+
+        // getMenu
         getMenu();
         function getMenu(){
-            let txt ='';
-            Item.forEach( (e,i)=>{
+            var txt ='';
+            for(i in Items){
                 txt+=`<li>
-                        <a href="#">${e['name']}</a>
+                        <a href="#">${Items[i]['name']}</a>
                     </li>`;
-            });
-            $('.menu').find('ul.ul1').append(txt);
+            }
+            menu.find('ul.ul1').append(txt);
         }
-        getMenuR();
-        function getMenuR(){
-            let txt ='';
-            Item.forEach( e =>{
-                txt+=`<li>
-                        <a href="#">${e['name1']}</a>
-                    </li>`;
-            });
-            $('.menu').find('ul.ul2').append(txt);
-        }
+
     });
+
 </script>
 </html>
