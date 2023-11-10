@@ -20,14 +20,18 @@ div{
     transform: scale(1.1);
 }
 
-#bar1{
+/* #bar1{
     background-color: cadetblue;
     position: fixed;
     top: 0;
     z-index: 98;
-}
+} */
 .menu-container{
-    padding: 5px;
+    padding: 0px;
+    background-color: cadetblue;
+    position: fixed;
+    top: 0;
+    z-index: 98;
 }
 .menu-container ul li{
     float: left;
@@ -35,9 +39,9 @@ div{
 .menu-container ul li a{
     display: block;
     text-decoration: none;
-    padding: 13px;
+    padding: 15px;
     color: white;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -148,7 +152,7 @@ div{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.514);
     width: 100%;
     height: 100%;
     z-index: 99;
@@ -417,6 +421,30 @@ a.btncard{
     background-color: crimson;
 }
 
+.left-mneu-container{
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background-color: cadetblue;
+    width: 110px;
+    height: 100%;
+    z-index: 100;
+}
+.left-mneu-container ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+}
+.left-mneu-container ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.342);
+}
+.active2{
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
 
 
 /*Extra large devices (large desktops, 1200px and up)*/
@@ -473,13 +501,37 @@ a.btncard{
 
     .frm{
         width: 90%;
-        height: 80%;
-    }
+        height: 70%;
+}
     .frm .box1{
         width: 100%;
     }
     .frm .box2{
         opacity: 0;
+    }
+
+    .Item-container{
+        height: 300px;
+        padding: 5px;
+    }
+    .container{
+        max-width: 100%;
+    }
+
+    .left-mneu-container ul li a{
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .menu-container ul.ul2 li a{
+        font-size: 14px;
+    }
+    .footer-box{
+        height: 70px;
+    }
+    .footer-box span{
+        font-size: 17px;
+        font-weight: bold;
     }
     
 }
@@ -500,13 +552,45 @@ a.btncard{
 
     .frm{
         width: 90%;
-        height: 70%;
+        height: 60%;
     }
     .frm .box1{
         width: 100%;
     }
     .frm .box2{
         opacity: 0;
+    }
+    .Item-container{
+        height: 330px;
+        padding: 5px;
+    }
+    .item-box .img-box{
+        height: 75%;
+    }
+  
+    .item-box .txt-box{
+        height: 25%;
+    }
+    .item-box .txt-box h1{
+        font-size: 12px;
+    }
+    .product-box .txt-box h1{
+        font-size: 12px;
+      
+    }
+    .left-mneu-container ul li a{
+        padding: 15px;
+        font-size: 12px;
+    }
+    .menu-container ul.ul2 li a{
+        font-size: 14px;
+    }
+    .footer-box{
+        height: 60px;
+    }
+    .footer-box span{
+        font-size: 17px;
+        font-weight: bold;
     }
     
 }

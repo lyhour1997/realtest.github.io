@@ -16,7 +16,10 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 menu-container">
                     <ul class="ul1">
                         <li class="btnbars">
-                            <a href=""><i class="fas fa-bars"></i></a>
+                            <a class="active2" href="#"><i class="fas fa-bars"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-house"></i></a>
                         </li>
                     </ul>
 
@@ -303,6 +306,14 @@
         </div>
     </div> -->
     
+    <div class="left-mneu-container">
+        <ul>
+           <!-- <li>
+                <a href=""></a>
+           </li> -->
+        </ul>
+    </div>
+
 </body>
 <script>
 
@@ -311,7 +322,7 @@
             "name":"IPhone",
             "title":"The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
             "title1":"The iPhone is a smartphone made by Apple that combines a computer",
-            "img":"img/1.webp",
+            "img":"img/1.jpg",
             "img1":"img/2.jpg",
             "img2":"img/3.webp",
             "code":"A001",
@@ -324,7 +335,7 @@
             "title":"Android OS is a Linux-based mobile operating system that primarily runs on smartphones and tablets.",
             "title1":"Android OS is a Linux-based mobile operating system that",
             "img":"img/2.jpg",
-            "img1":"img/1.webp",
+            "img1":"img/1.jpg",
             "img2":"img/3.webp",
             "code":"A002",
             "price":"450.00",
@@ -337,7 +348,7 @@
             "title1":"The iPad is a touchscreen tablet PC made by Apple",
             "img":"img/3.webp",
             "img1":"img/2.jpg",
-            "img2":"img/1.webp",
+            "img2":"img/1.jpg",
             "code":"A003",
             "price":"400.00",
             "price1":"350.00",
@@ -348,7 +359,7 @@
             "title":"Samsung, South Korean company that is one of the world's largest producers of electronic devices.",
             "title1":"Samsung, South Korean company that is one of the world's",
             "img":"img/4.webp",
-            "img1":"img/1.webp",
+            "img1":"img/1.jpg",
             "img2":"img/3.webp",
             "code":"A004",
             "price":"350.00",
@@ -359,7 +370,7 @@
             "name":"OPPO",
             "title":"Oppo is a Chinese consumer electronics manufacturer headquartered in Dongguan, Guangdong",
             "title1":"Oppo is a Chinese consumer electronics manufacturer headquartered in Dongguan",
-            "img":"img/5.jpeg",
+            "img":"img/5.jpg",
             "img1":"img/2.jpg",
             "img2":"img/4.webp",
             "code":"A005",
@@ -373,7 +384,7 @@
             "title1":"LENOVO is a Hong Kong based multinational company founded by Liu Chuanzhi",
             "img":"img/6.jpg",
             "img1":"img/2.jpg",
-            "img2":"img/1.webp",
+            "img2":"img/1.jpg",
             "code":"A006",
             "price":"300.00",
             "price1":"280.00",
@@ -385,7 +396,7 @@
             "title1":"The vivo Y series is for affordable devices, meaning we don't expect anything",
             "img":"img/7.jpg",
             "img1":"img/4.webp",
-            "img2":"img/5.jpeg",
+            "img2":"img/5.jpg",
             "code":"A007",
             "price":"300.00",
             "price1":"250.00",
@@ -396,7 +407,7 @@
             "title":"Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices",
             "title1":"Huawei is a leading global provider of information and communications technology",
             "img":"img/8.jpg",
-            "img1":"img/1.webp",
+            "img1":"img/1.jpg",
             "img2":"img/6.jpg",
             "code":"A008",
             "price":"400.00",
@@ -409,12 +420,32 @@
         var menu = $(".menu-container");
         var popup = "<div class='popup'></div>";
 
+        // get leftMenu 
+
+        getLeftMenu();
+        function getLeftMenu(){
+            var txt = '';
+            for(i in Items){
+                txt+=`<li>
+                        <a href="#">${Items[i]['name']}</a>
+                    </li>`;
+            }
+            $('.left-mneu-container').find('ul').append(txt);
+        }
+        
+        // remove
+        body.on('click','.popup',function(){
+            $('.left-mneu-container').css({"left":"-150px"});
+            $(this).remove();
+            $('.left-mneu-container').css({"transition":"0.6s"});
+        });
+
         // get prod
         getProd();
         function getProd(){
             var txt = '';
             for(i in Items){
-                txt+=`<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 Product-container">
+                txt+=`<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 Product-container">
                     <div class="product-box">
 
                         <div class="img-box">
@@ -448,7 +479,7 @@
                                 </li>
                                 
                             </div>
-                            <a href="" class="btncard">
+                            <a href="#" class="btncard">
                                 <span>Add to card</span> 
                             </a>
 
@@ -501,7 +532,7 @@
         function getItem(){
             var txt = '';
             for(i in Items){
-                txt +=`<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 Item-container">
+                txt +=`<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 Item-container">
                             <div class="item-box">
                                 <div class="img-box">
                                     <img src="${Items[i]['img']}" alt="">
@@ -617,6 +648,54 @@
             }
             menu.find('ul.ul1').append(txt);
         }
+
+        // click on bars
+        body.on('click','ul li.btnbars',function(){
+            $('.left-mneu-container').css({"left":"0px"});
+            body.append(popup);
+            $('.left-mneu-container').css({"transition":"0.6s"});
+        });  
+
+        // click on Menu
+        body.on('click','.menu-container ul li',function(){
+            var eThis = $(this);
+            var ind = eThis.index() - 2; // count on menu all
+            var img2 = Items[ind]['img'];
+            var title2 = Items[ind]['title'];
+            
+            var frm =`<div class='popup'>
+                    <div class="frm">
+                        <div class="box1">
+                            <img src="${img2}" alt="">
+                        </div>
+
+                        <div class="box2">
+                            <h1>Information</h1>
+
+                            <div class="box2-1">
+                                <div class="img-box">
+                                    <img src="${img2}" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <h2>${title2}</h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="btnClose">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>`;
+            body.append(frm); 
+
+        });
+        body.on('click','.menu-container ul li a',function(){
+            var eThis = $(this);
+            $('li a').removeClass('active2');
+            eThis.addClass('active2');
+        });
 
     });
 
