@@ -328,6 +328,7 @@
             "code":"A001",
             "price":"500.00",
             "price1":"450.00",
+            "img3":"img/slide.1.jpg",
         },
 
         {
@@ -340,6 +341,7 @@
             "code":"A002",
             "price":"450.00",
             "price1":"400.00",
+            "img3":"img/slide.2.jpg",
         },
 
         {
@@ -352,6 +354,7 @@
             "code":"A003",
             "price":"400.00",
             "price1":"350.00",
+            "img3":"img/slide.3.jpg",
         },
 
         {
@@ -364,6 +367,7 @@
             "code":"A004",
             "price":"350.00",
             "price1":"300.00",
+            "img3":"img/slide.4.jpg",
         },
 
         {
@@ -376,6 +380,7 @@
             "code":"A005",
             "price":"330.00",
             "price1":"300.00",
+            "img3":"img/slide.5.jpg",
         },
 
         {
@@ -388,6 +393,7 @@
             "code":"A006",
             "price":"300.00",
             "price1":"280.00",
+            "img3":"img/slide.6.jpg",
         },
 
         {
@@ -400,6 +406,7 @@
             "code":"A007",
             "price":"300.00",
             "price1":"250.00",
+            "img3":"img/slide.7.jpg",
         },
 
         {
@@ -412,6 +419,7 @@
             "code":"A008",
             "price":"400.00",
             "price1":"330.00",
+            "img3":"img/slide.4.jpg",
         }
     ];
 
@@ -602,7 +610,7 @@
             var num = Items.length;
             for(i=0; i < num; i++){
                 txt+=`<div class="slide-box">
-                        <img src="${Items[i]['img']}" alt="">
+                        <img src="${Items[i]['img3']}" alt="">
                         <h1>${Items[i]['name']}</h1>
                     </div>`;
             }
