@@ -172,7 +172,7 @@ div{
 .box1 img{
     width: 100%;
     height: 100%;
-     object-fit: contain;
+    object-fit: cover;
 }
 .frm .box2{
     width: 38%;
